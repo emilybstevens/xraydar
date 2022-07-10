@@ -105,6 +105,7 @@ button .btn {
 .fragment-two img {
     float: right;
     padding-bottom: 0.52vw;
+    max-height: 21vw;
 }
 
 
@@ -148,6 +149,7 @@ button .btn {
 .fragment-three img {
     float: left;
     padding-bottom: 0.52vw;
+    max-height: 21vw;
 }
 
 
