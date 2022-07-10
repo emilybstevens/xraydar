@@ -51,8 +51,8 @@ button .btn {
     background-image: url(../images/cxr1.jpg);
     background-size: 100%;
     background-color: var(--medium);
-    padding-top: 110px;
-    padding-bottom: 100px;
+    padding-top: 5.73vw;
+    padding-bottom: 5.21vw;
 }
 
 .fragment-one h1 {
@@ -67,12 +67,12 @@ button .btn {
 /* FRAG TWO */
 .fragment-two {
     background-color: var(--light);
-    padding-bottom: 30px;
+    padding-bottom: 1.56vw;
 }
 
 .fragment-two .row {
-    padding-top: 30px;
-    padding-left: 70px;
+    padding-top: 1.56vw;
+    padding-left: 3.65vw;
 }
 
 .fragment-two h1 {
@@ -80,31 +80,31 @@ button .btn {
     color: var(--light);
     text-align: center;
     font-size: x-large;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1.04vw;
+    padding-bottom: 1.04vw;
 }
 
 .fragment-two h2 {
     text-align: justify;
     font-size: large;
-    padding-top: 20px;
-    padding-right: 120px;
-    padding-left: 120px;
-    padding-bottom: 20px;
+    padding-top: 1.04vw;
+    padding-right: 6.25vw;
+    padding-left: 6.25vw;
+    padding-bottom: 1.04vw;
 }
 
 .fragment-two h3 {
     text-align: justify;
     font-size: large;
-    padding-top: 20px;
-    padding-right: 120px;
-    padding-left: 40px;
-    padding-bottom: 20px;
+    padding-top: 1.04vw;
+    padding-right: 6.25vw;
+    padding-left: 2.08vw;
+    padding-bottom: 1.04vw;
 }
 
 .fragment-two img {
     float: right;
-    padding-bottom: 10px;
+    padding-bottom: 0.52vw;
 }
 
 
@@ -114,8 +114,8 @@ button .btn {
 }
 
 .fragment-three .row {
-    padding-top: 30px;
-    padding-right: 70px;
+    padding-top: 1.56vw;
+    padding-right: 3.65vw;
 }
 
 .fragment-three h1 {
@@ -123,31 +123,31 @@ button .btn {
     color: var(--light);
     text-align: center;
     font-size: x-large;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1.04vw;
+    padding-bottom: 1.04vw;
 }
 
 .fragment-three h2 {
     text-align: justify;
     font-size: large;
-    padding-top: 20px;
-    padding-right: 120px;
-    padding-left: 120px;
-    padding-bottom: 20px;
+    padding-top: 1.04vw;
+    padding-right: 6.25vw;
+    padding-left: 6.25vw;
+    padding-bottom: 1.04vw;
 }
 
 .fragment-three h3 {
     text-align: justify;
     font-size: large;
-    padding-top: 20px;
-    padding-right: 40px;
-    padding-left: 120px;
-    padding-bottom: 50px;
+    padding-top: 1.04vw;
+    padding-right: 2.08vw;
+    padding-left: 6.25vw;
+    padding-bottom: 2.6vw;
 }
 
 .fragment-three img {
     float: left;
-    padding-bottom: 10px;
+    padding-bottom: 0.52vw;
 }
 
 
@@ -161,6 +161,6 @@ button .btn {
     color: var(--light);
     font-size: medium;
     text-align: right;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 2.6vw;
+    padding-bottom: 1.04vw;
 }
