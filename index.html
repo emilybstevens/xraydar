@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- boilerplate-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-RAYDAR</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!-- styling -->
+    <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+<body>
+    <main>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg" id="nav">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="static/images/logo-light.png" height="25" class="d-inline-block align-center">
+                X-RAYDAR
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">
+                    HOME
+                    <span class="sr-only">(current)</span></a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="static/html/performance.html">PERFORMANCE</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="static/html/app.html">APP</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="static/html/data.html">DATA</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="static/html/about.html">ABOUT</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+
+        <!-- HEADER (fragment 1) -->
+        <section class="fragment fragment-one" id="header">
+            <div class = "header">
+                <h1>X-RAYDAR</h1>
+                <h3>Algorithmic Chest X-Ray Analysis</h3>
+            </div>
+        </section>
+
+        <!-- FRAGMENT 2 (intro)-->
+        <section class="fragment fragment-two" id="intro">
+            <div class="introHead"> 
+                <h1>Medical Background</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-3">
+                    <img src="static/images/cxr_data.png" height="400">
+                </div>
+                <div class = "col-9">
+                    <h3>
+                    In recent years, the high rates of emergent lung disease have revealed a weakness in emergency medicine: emergency radiology.
+                    </br></br>
+                    Traditionally, when a patient is admitted to the ER and has a chest X-ray performed (CXR), that CXR is entered into a waiting list to be 
+                    read and interpreted by a radiologist. This interpretation is required for patients to receive any sort of active treatment or further 
+                    hospitalization. From the time a CXR is taken, it can take several hours for the radiologist to return an interpretation to the ER staff, 
+                    and without that interpretation, ER physicians cannot recommend any type of treatment for their patient. This means that while the ER physician 
+                    is waiting for the radiologist's report, the patient is effectively on standby, regardless of the severity of their symptoms.
+                    </br></br>
+                    Unfortunately, most hospitals do not have radiology triage systems in place and as a result, emergent patients requiring immediate surgery 
+                    will end up on the same waiting list as less dire patients, with no indicator way for radiologists to know which patient charts need to be 
+                    prioritized. This lack of a useful CXR triage system results in longer healthcare wait times for emergent conditions requiring surgery, 
+                    which can increase the mortality rate for those conditions.
+                    </br></br>
+                    The goal of this model will be to create a machine learning model that can function as a triage system for this waiting list, flagging the 
+                    higher-risk CXRs based on the presence of visual anomalies associated with higher-mortality conditions. With this triage system, radiologists 
+                    can ensure that they are prioritizing the patients with potentially deadly conditions, reducing the rates of Adverse, Sentinel, and Never 
+                    Events in ER settings by decreasing the amount of time from ER admittance to hospital admittance for emergent patients.
+                    </h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- FRAGMENT 3 (algo introduction)-->
+        <section class="fragment fragment-three" id="algoOutline">
+            <div class = headerThree>
+                <h1>Outline of Algorithm</h1>
+            </div>
+            <div class="row">
+                <div class = "col-9">
+                    <h3>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Vestibulum mattis ullamcorper velit sed. Quis lectus nulla at volutpat diam ut venenatis. Feugiat pretium nibh ipsum consequat 
+                    nisl vel pretium. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. In hendrerit gravida rutrum quisque non 
+                    tellus orci ac.
+                    </br></br>
+                    Egestas sed sed risus pretium quam vulputate dignissim suspendisse in. Cursus euismod quis viverra nibh cras pulvinar mattis nunc. 
+                    Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet. Non pulvinar neque laoreet suspendisse interdum consectetur libero id. 
+                    Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Tristique magna sit amet purus gravida. Sem et tortor consequat 
+                    id porta nibh venenatis.
+                    </h3>
+                </div>
+                <div class = "col-3">
+                    <img src="static/images/logo-dark.png" height="400">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <section class="fragment fragment-end">
+            <div class="container">
+                <h1>&copy; 2022</h1>
+            </div>
+        </section>
+    </footer>
+    
+    <!--scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
