@@ -3,7 +3,7 @@
     --dark: #373737;
     --medium-dark: #607c77;
     --medium: #aeaeae;
-    --medium-light: #b7e9e1;
+    --medium-light: #f3d0c0;
     --light: #e8e8e8;
   }
 
@@ -20,7 +20,8 @@ html {
 /* NAV BAR */
 nav {
     background-color: var(--medium-dark);
-    color: var(--light)
+    color: var(--light);
+    fill: var(--light)
 }
 
 .navbar-brand {
@@ -39,11 +40,6 @@ nav {
 .navbar-nav .nav-link {
     background-color: var(--medium-dark);
     color: var(--light)
-}
-
-button .btn { 
-    background-color: var(--medium-dark);
-    color: var(--light); 
 }
 
 /* FRAG ONE */
