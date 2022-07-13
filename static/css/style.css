@@ -40,7 +40,11 @@ nav {
 .navbar-nav .nav-link {
     background-color: var(--medium-dark);
     color: var(--light); 
-    margin-right: 0.52vw;
+    margin-right: 0.3vw;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: var(--light);
 }
 
 /* FRAG ONE */
