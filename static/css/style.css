@@ -39,7 +39,8 @@ nav {
 
 .navbar-nav .nav-link {
     background-color: var(--medium-dark);
-    color: var(--light)
+    color: var(--light); 
+    margin-right: 0.52vw;
 }
 
 /* FRAG ONE */
