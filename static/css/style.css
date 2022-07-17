@@ -153,6 +153,92 @@ nav {
     max-height: 21vw;
 }
 
+/* FRAG FOUR */
+.fragment-four {
+    background-color: var(--light);
+}
+
+.fragment-four .row {
+    padding-top: 1.56vw;
+    padding-right: 3.65vw;
+}
+
+.fragment-four h1 {
+    background-color: var(--medium-dark);
+    color: var(--light);
+    text-align: center;
+    font-size: x-large;
+    padding-top: 1.04vw;
+    padding-bottom: 1.04vw;
+}
+
+.fragment-four h2 {
+    text-align: justify;
+    font-size: large;
+    padding-top: 1.04vw;
+    padding-right: 6.25vw;
+    padding-left: 6.25vw;
+    padding-bottom: 1.04vw;
+}
+
+.fragment-four h3 {
+    text-align: justify;
+    font-size: large;
+    padding-top: 1.04vw;
+    padding-right: 2.08vw;
+    padding-left: 6.25vw;
+    padding-bottom: 2.6vw;
+}
+
+.fragment-four img {
+    float: left;
+    padding-bottom: 0.52vw;
+    max-height: 21vw;
+}
+
+/* FRAG FIVE */
+.fragment-five {
+    background-color: var(--light);
+}
+
+.fragment-five .row {
+    padding-top: 1.56vw;
+    padding-right: 3.65vw;
+}
+
+.fragment-five h1 {
+    background-color: var(--medium-dark);
+    color: var(--light);
+    text-align: center;
+    font-size: x-large;
+    padding-top: 1.04vw;
+    padding-bottom: 1.04vw;
+}
+
+.fragment-five h2 {
+    text-align: justify;
+    font-size: large;
+    padding-top: 1.04vw;
+    padding-right: 6.25vw;
+    padding-left: 6.25vw;
+    padding-bottom: 1.04vw;
+}
+
+.fragment-five h3 {
+    text-align: justify;
+    font-size: large;
+    padding-top: 1.04vw;
+    padding-right: 2.08vw;
+    padding-left: 6.25vw;
+    padding-bottom: 2.6vw;
+}
+
+.fragment-five img {
+    float: left;
+    padding-bottom: 0.52vw;
+    max-height: 21vw;
+}
+
 
 /* FRAG END */
 .fragment-end {
