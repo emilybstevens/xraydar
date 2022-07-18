@@ -75,51 +75,77 @@
 
         <!-- FRAGMENT 2 (intro)-->
         <section class="fragment fragment-two" id="two">
-            <div class="introPer"> 
-                <h1>[insert performance]]</h1>
+            <div class = "three">
+                <h1>Algorithm Performance</h1>
             </div>
             <div class="row">
-                <div class="col-3">
-                    <img src="../images/initEpoc.png">
-                </div>
-                <div class = "col-9">
+                <div class="col-2"></div>
+                <div class="col-5">
                     <h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Vestibulum mattis ullamcorper velit sed. Quis lectus nulla at volutpat diam ut venenatis. Feugiat pretium nibh ipsum consequat 
-                    nisl vel pretium. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. In hendrerit gravida rutrum quisque non 
-                    tellus orci ac.
-                    </br></br>
-                    Egestas sed sed risus pretium quam vulputate dignissim suspendisse in. Cursus euismod quis viverra nibh cras pulvinar mattis nunc. 
-                    Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet. Non pulvinar neque laoreet suspendisse interdum consectetur libero id. 
-                    Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Tristique magna sit amet purus gravida. Sem et tortor consequat 
-                    id porta nibh venenatis.
-                    </br></br>
-                    Elementum pulvinar etiam non quam lacus suspendisse faucibus. Arcu non sodales neque sodales. Lorem ipsum dolor sit amet consectetur. 
-                    Rhoncus urna neque viverra justo nec. Mauris augue neque gravida in fermentum et sollicitudin. Porta nibh venenatis cras sed felis eget velit.
+                        The output from the machine is a series of lines denoting the image file name, followed by a series of categories. If the machine 
+                        recognized a positive disease label in the respective category, it marked it with a "1". If no disease was spotted, the No Label category recevied a "1".</br></br>
+                        For a better view of the image, <a href="https://files.slack.com/files-pri/T031E1FV95Z-F03PUBNQ9T4/image.png" target="_blank"><b>click here</b></a>. 
                     </h3>
                 </div>
+                <div class="col-2">
+                    <img src="../images/output.png">
+                </div>
+                <div class="col-3"></div>
             </div>
+            
+            <div class="bar"></div>
+
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-3">
+                    <img src="../images/set_dist.png">
+                </div>
+                <div class = "col-5" >
+                    <h3>
+                    The estimated distribution of various disease labels present in the original data set can be seen 
+                    <a href="https://files.slack.com/files-pri/T031E1FV95Z-F03PRD2VD53/image.png" target="_blank"><b>here</b></a>. 
+                    </h3>
+                </div>
+                <div class="col-2"></div>
+            </div>
+
+            <div class="bar"></div>
+
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-5">
+                    <h3>
+                        Params utilized in training can be seen <a href="https://files.slack.com/files-pri/T031E1FV95Z-F03PRD2GNLV/image.png" target="_blank"><b>here</b></a>. 
+                    </h3>
+                </div>
+                <div class="col-2">
+                    <img src="../images/sequential.png">
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
         </section>
 
         <!-- FRAGMENT 3 (intro)-->
         <section class="fragment fragment-three" id="three">
-            <div class = "three">
-                <h1>[insert performance]</h1>
-                <h2>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Vestibulum mattis ullamcorper velit sed. Quis lectus nulla at volutpat diam ut venenatis. Feugiat pretium nibh ipsum consequat 
-                nisl vel pretium. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. In hendrerit gravida rutrum quisque non 
-                tellus orci ac.
-                </br></br>
-                Egestas sed sed risus pretium quam vulputate dignissim suspendisse in. Cursus euismod quis viverra nibh cras pulvinar mattis nunc. 
-                Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet. Non pulvinar neque laoreet suspendisse interdum consectetur libero id. 
-                Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Tristique magna sit amet purus gravida. Sem et tortor consequat 
-                id porta nibh venenatis.
-                </br></br>
-                Elementum pulvinar etiam non quam lacus suspendisse faucibus. Arcu non sodales neque sodales. Lorem ipsum dolor sit amet consectetur. 
-                Rhoncus urna neque viverra justo nec. Mauris augue neque gravida in fermentum et sollicitudin. Porta nibh venenatis cras sed felis eget velit.
-                </h2>
+            <h1>Images of Performance</h1>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-3">
+                <img src="../images/initEpoc.png">
             </div>
+            <div class = "col-5" >
+                <h3>
+                Currently, in order to visualize the ability of the machine to classify the different diseases, a ROC curve (Receiver Characteristics Operator) has been created. 
+                This graph (seen on the left) shows the AUC (Area Under Curve) for each specific disease label. 
+                </br></br>
+                AUC scores for each disease range from 0.26 to 0.88. The image on the left displays the AUC score by disease label, 
+                and how it increases with each epoch. For a better view of the image, 
+                <a href="https://files.slack.com/files-pri/T031E1FV95Z-F03P1GL8E2Y/alpha_net_10epochs.png" target="_blank"><b>click here</b></a>. 
+                </h3>
+            </div>
+            <div class="col-2"></div>
+        </div>
         </section>
 
     </main>
