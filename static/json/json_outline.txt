@@ -1,0 +1,9 @@
+{
+	index(1,2,3,4,5,6,7,etc), 
+
+	metadata(1[index:1, xray number:1], 2[fdsksj;s])
+
+	diagnoses(1[pneumonia],2[hernia, infiltration])
+
+	img url(1, 
+}

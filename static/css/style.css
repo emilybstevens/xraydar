@@ -129,6 +129,33 @@ nav {
     margin-bottom: 2vw;
 }
 
+.fragment-two .well {
+    padding: 10px;
+    margin-bottom: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--medium-dark);
+    border-radius: 5px;
+    color: var(--light);
+    background-color: var(--medium-dark);
+}
+
+.fragment-two .panel {
+    padding: 10px;
+    margin-bottom: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--medium-dark);
+    border-radius: 5px;
+    color: var(--light);
+    background-color: var(--medium-dark);
+}
+
+.fragment-two .panel h5 {
+    text-decoration: underline;
+    color: var(--light)
+}
+
 /* FRAG THREE */
 .fragment-three {
     background-color: var(--light);

@@ -76,44 +76,50 @@
 
         <!-- FRAGMENT 2 (intro)-->
         <section class="fragment fragment-two" id="two">
+            <h1>View Specific X-Ray</h1>
             <div class="row">
-                <div class = "col-md-3">
+                <div class="col-1"></div>
+                <div class = "col-md-2">
                     <!-- selection drop down -->
                     <div class="well">
-                        <h2>Select a Patient</h2>
+                        <h5><b>Select X-Ray</b></h5>
+                        <!-- <select id="selDataset"></select> -->
                         <select id="selDataset" onchange="optionChanged(this.value)"></select>
-                    </div>
-                    <div class="panel" class="border border-light">
-                        <!-- panel to display disease info -->
+                      </div>
+                      <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <h2 class="panel-title">Patient Info</h2>
+                          <h5 class="panel-title"><b>Demographic Info</b></h5>
                         </div>
-                        <!-- change 'metadata' to reflect whatever is visible in json -->
-                        <div id="sample-metadata" class="panel-body">
-                        </div>
-                    </div>
+                        <div id="sample-metadata" class="panel-body"></div>
+                      </div>
                 </div>
             </div>
         </section>
 
         <!-- FRAGMENT 3 (intro)-->
         <section class="fragment fragment-three" id="three">
-            <div class = "three">
-                <h1>[insert interactive data]</h1>
-                <h2>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Vestibulum mattis ullamcorper velit sed. Quis lectus nulla at volutpat diam ut venenatis. Feugiat pretium nibh ipsum consequat 
-                nisl vel pretium. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. In hendrerit gravida rutrum quisque non 
-                tellus orci ac.
-                </br></br>
-                Egestas sed sed risus pretium quam vulputate dignissim suspendisse in. Cursus euismod quis viverra nibh cras pulvinar mattis nunc. 
-                Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet. Non pulvinar neque laoreet suspendisse interdum consectetur libero id. 
-                Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Tristique magna sit amet purus gravida. Sem et tortor consequat 
-                id porta nibh venenatis.
-                </br></br>
-                Elementum pulvinar etiam non quam lacus suspendisse faucibus. Arcu non sodales neque sodales. Lorem ipsum dolor sit amet consectetur. 
-                Rhoncus urna neque viverra justo nec. Mauris augue neque gravida in fermentum et sollicitudin. Porta nibh venenatis cras sed felis eget velit.
-                </h2>
+            <h1>[insert interactive data]</h1>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class = "col-md-8"></div>
+                    <div class = "three">
+                        <h2>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Vestibulum mattis ullamcorper velit sed. Quis lectus nulla at volutpat diam ut venenatis. Feugiat pretium nibh ipsum consequat 
+                        nisl vel pretium. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. In hendrerit gravida rutrum quisque non 
+                        tellus orci ac.
+                        </br></br>
+                        Egestas sed sed risus pretium quam vulputate dignissim suspendisse in. Cursus euismod quis viverra nibh cras pulvinar mattis nunc. 
+                        Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet. Non pulvinar neque laoreet suspendisse interdum consectetur libero id. 
+                        Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Tristique magna sit amet purus gravida. Sem et tortor consequat 
+                        id porta nibh venenatis.
+                        </br></br>
+                        Elementum pulvinar etiam non quam lacus suspendisse faucibus. Arcu non sodales neque sodales. Lorem ipsum dolor sit amet consectetur. 
+                        Rhoncus urna neque viverra justo nec. Mauris augue neque gravida in fermentum et sollicitudin. Porta nibh venenatis cras sed felis eget velit.
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-2"></div>
             </div>
         </section>
 
@@ -132,13 +138,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <!-- update to reflect JS location-->
