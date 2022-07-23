@@ -35,18 +35,80 @@ function init() {
   function buildMetadata(sample) {
     d3.json("../json/combined_test.json").then((data) => {
       var metadata = data.metadata;
+      var all_dx = data.all_dx;
       // console.log(metadata);
 
       // Filter the data for the object with the desired sample number
       var resultArray = metadata.filter(sampleObj => sampleObj.xray_number == sample);
       var result = resultArray[0];
+
+      var resultArrayTwo = all_dx.filter(sampleObj => sampleObj.xray_number == sample);
+      var resultTwo = resultArrayTwo[0];
       // console.log(result)
       // Use d3 to select the panel with id of `#sample-metadata`
       var PANEL = d3.select("#sample-metadata");
+      var panelAll = d3.select("#all-dx");
       // console.log(PANEL)
       // Use `.html("") to clear any existing metadata
       PANEL.html("");
-  
+      panelAll.html("");
+
+      // define all_dx panels
+      // 1
+      if (resultTwo.dx1 === null) {
+        var dx1 = "";
+      } else if (typeof resultTwo.dx_1 === "string") {
+        var dx1 = resultTwo.dx_1
+      }
+      // 2
+      if (resultTwo.dx_2 === null) {
+        var dx2 = "";
+      } else if (typeof resultTwo.dx_2 === "string") {
+        var dx2 = resultTwo.dx_2;
+      }
+      // 3
+      if (resultTwo.dx_3 === null) {
+        var dx3 = "";
+      } else if (typeof resultTwo.dx_3 === "string") {
+        var dx3 = resultTwo.dx_3;
+      }
+      // 4
+      if (resultTwo.dx_4 === null) {
+        var dx4 = "";
+      } else if (typeof resultTwo.dx_4 === "string") {
+        var dx4 = resultTwo.dx_4;
+      }
+      // 5
+      if (resultTwo.dx_5 === null) {
+        var dx5 = "";
+      } else if (typeof resultTwo.dx_5 === "string") {
+        var dx5 = resultTwo.dx_5;
+      }
+      // 6
+      if (resultTwo.dx_6 === null) {
+        var dx6 = "";
+      } else if (typeof resultTwo.dx_6 === "string") {
+        var dx6 = resultTwo.dx_6;
+      }
+      // 7
+      if (resultTwo.dx_7 === null) {
+        var dx7 = "";
+      } else if (typeof resultTwo.dx_7 === "string") {
+        var dx7 = resultTwo.dx_7;
+      }
+      // 8
+      if (resultTwo.dx_8 === null) {
+        var dx8 = "";
+      } else if (typeof resultTwo.dx_8 === "string") {
+        var dx8 = resultTwo.dx_8;
+      }
+      // 9
+      if (resultTwo.dx_9 === null) {
+        var dx9 = "";
+      } else if (typeof resultTwo.dx_9 === "string") {
+        var dx9 = resultTwo.dx_9;
+      }
+
       // Edit the keys to capture more detailed information and print each value
       PANEL.append("h6").text(`X-Ray Number: ${result.xray_number}`);
       PANEL.append("h6").text(`Image ID: ${result.image_index}`);
@@ -56,6 +118,17 @@ function init() {
       PANEL.append("h6").text(`View Position: ${result.view_position}`);
       PANEL.append("h6").text(`Triage Level: ${result.highest_label}`);
       
+      // all dx panel
+      panelAll.append("h6").text(`${dx1}`);
+      panelAll.append("h6").text(`${dx2}`);
+      panelAll.append("h6").text(`${dx3}`);
+      panelAll.append("h6").text(`${dx4}`);
+      panelAll.append("h6").text(`${dx5}`);
+      panelAll.append("h6").text(`${dx6}`);
+      panelAll.append("h6").text(`${dx7}`);
+      panelAll.append("h6").text(`${dx8}`);
+      panelAll.append("h6").text(`${dx9}`);
+
     });
   }
   
