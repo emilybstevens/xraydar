@@ -3,7 +3,7 @@ function init() {
     var selector = d3.select("#selDataset");
     // console.log("selected")
     // Use the list of sample names to populate the select options
-    d3.json("../json/combined_test.json").then((dataset) => {
+    d3.json("../json/xray_data.json").then((dataset) => {
       var sampleNames = dataset.names;
       // console.log(sampleNames[0])
   
@@ -33,7 +33,7 @@ function init() {
   
   // Demographics Panel 
   function buildMetadata(sample) {
-    d3.json("../json/combined_test.json").then((data) => {
+    d3.json("../json/xray_data.json").then((data) => {
       var metadata = data.metadata;
       var all_dx = data.all_dx;
       // console.log(metadata);
@@ -137,7 +137,7 @@ function init() {
   function buildCharts(sample) {
     // console.log("begun")
     // 2. Use d3.json to load and retrieve the samples.json file 
-    d3.json("../json/combined_test.json").then((data) => {
+    d3.json("../json/xray_data.json").then((data) => {
 
     // Deliverable 3: Create a Gauge Chart
     // 1. Create a variable that filters the metadata array for the object with the desired sample number.
