@@ -149,13 +149,13 @@ function init() {
     var gaugeResult = gaugeArray[0];
 
     // 3. Create a variable that holds the washing frequency.
-    var hiClass = gaugeResult.highest_class;
+    var hiLabel = gaugeResult.highest_label;
     
     // 4. Create the trace for the gauge chart.
     var gaugeTrace = [
     {
       title: { text: "<b>Triage Level" },
-      value: parseFloat(hiClass),
+      value: parseFloat(hiLabel),
       type: "indicator",
       mode: "gauge",
       gauge: {
