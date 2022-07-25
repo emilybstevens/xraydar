@@ -111,7 +111,8 @@ function init() {
 
       // Edit the keys to capture more detailed information and print each value
       PANEL.append("h6").text(`X-Ray Number: ${result.xray_number}`);
-      PANEL.append("h6").text(`Triage: ${result.highest_label}`);
+      PANEL.append("h6").text(`Triage: ${result.highest_class}`);
+      PANEL.append("h6").text(`Highest Triage Diagnosis: ${result.highest_dx}`);
       PANEL.append("h6").text(`Image ID: ${result.image_index}`);
       PANEL.append("h6").text(`Patient ID: ${result.patient_id}`);
       PANEL.append("h6").text(`Gender: ${result.gender}`);
