@@ -116,6 +116,10 @@ nav {
     font-size: large;
 }
 
+.fragment-two p {
+    text-align: justify;
+}
+
 .fragment-two img {
     float: right;
     margin-top: 1.5vw;
