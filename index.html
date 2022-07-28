@@ -79,30 +79,26 @@
             </div>
 
             <div class="row">
+                <div class="col-2"></div>
                 <div class="col-3">
                     <img src="static/images/cxr_data.png">
                 </div>
-                <div class = "col-9">
+                <div class = "col-4">
                     <h3>
-                    In recent years, the high rates of emergent lung disease have revealed a weakness in emergency medicine: emergency radiology.
+                    &nbsp;&nbsp;&nbsp;&nbsp;In recent years, the high rates of emergent lung disease have revealed a weakness in emergency medicine: emergency radiology.
                     </br></br>
-                    Traditionally, when a patient is admitted to the ER and has a chest X-ray performed (CXR), that CXR is entered into a waiting list to be 
-                    read and interpreted by a radiologist. This interpretation is required for patients to receive any sort of active treatment or further 
-                    hospitalization. From the time a CXR is taken, it can take several hours for the radiologist to return an interpretation to the ER staff, 
-                    and without that interpretation, ER physicians cannot recommend any type of treatment for their patient. This means that while the ER physician 
-                    is waiting for the radiologist's report, the patient is effectively on standby, regardless of the severity of their symptoms.
+                    &nbsp;&nbsp;&nbsp;&nbsp;Unfortunately, most hospitals do not have radiology triage systems in place and as a result, emergent patients requiring immediate surgery 
+                    will end up on the same waiting list as less dire patients, with no indicator for radiologists to know which patient charts need to be 
+                    prioritized. This lack of a useful CXR triage system results in longer healthcare wait times for emergent conditions, 
+                    which can increase the mortality rate for those patients.
                     </br></br>
-                    Unfortunately, most hospitals do not have radiology triage systems in place and as a result, emergent patients requiring immediate surgery 
-                    will end up on the same waiting list as less dire patients, with no indicator way for radiologists to know which patient charts need to be 
-                    prioritized. This lack of a useful CXR triage system results in longer healthcare wait times for emergent conditions requiring surgery, 
-                    which can increase the mortality rate for those conditions.
-                    </br></br>
-                    The goal of this model will be to create a machine learning model that can function as a triage system for this waiting list, flagging the 
-                    higher-risk CXRs based on the presence of visual anomalies associated with higher-mortality conditions. With this triage system, radiologists 
-                    can ensure that they are prioritizing the patients with potentially deadly conditions, reducing the rates of Adverse, Sentinel, and Never 
+                    &nbsp;&nbsp;&nbsp;&nbsp;X-Raydar is a machine learning model can function as a triage system for this waiting list, flagging the 
+                    higher-risk CXRs. With this triage system, radiologists 
+                    can ensure that they are prioritizing the patients with deadlier conditions, reducing the rates of Adverse, Sentinel, and Never 
                     Events in ER settings by decreasing the amount of time from ER admittance to hospital admittance for emergent patients.
                     </h3>
                 </div>
+                <div class="col-3"></div>
             </div>
         </section>
 
@@ -112,27 +108,30 @@
                 <h1>Outline of Algorithm</h1>
             </div>
             <div class="row">
-                <div class = "col-9">
+                <div class="col-2"></div>
+                <div class = "col-4">
                     <h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Vestibulum mattis ullamcorper velit sed. Quis lectus nulla at volutpat diam ut venenatis. Feugiat pretium nibh ipsum consequat 
-                    nisl vel pretium. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. In hendrerit gravida rutrum quisque non 
-                    tellus orci ac.
-                    </br></br>
-                    Egestas sed sed risus pretium quam vulputate dignissim suspendisse in. Cursus euismod quis viverra nibh cras pulvinar mattis nunc. 
-                    Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet. Non pulvinar neque laoreet suspendisse interdum consectetur libero id. 
-                    Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Tristique magna sit amet purus gravida. Sem et tortor consequat 
-                    id porta nibh venenatis.
-                    </br></br>
-                    Egestas sed sed risus pretium quam vulputate dignissim suspendisse in. Cursus euismod quis viverra nibh cras pulvinar mattis nunc. 
-                    Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet. Non pulvinar neque laoreet suspendisse interdum consectetur libero id. 
-                    Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Tristique magna sit amet purus gravida. Sem et tortor consequat 
-                    id porta nibh venenatis.
-                </br></br>
-                Egestas sed sed risus pretium quam vulputate dignissim suspendisse in. Cursus euismod quis viverra nibh cras pulvinar mattis nunc. 
-                Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet. Non pulvinar neque laoreet suspendisse interdum consectetur libero id. 
-                Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Tristique magna sit amet purus gravida. Sem et tortor consequat 
-                id porta nibh venenatis.
+                        &nbsp;&nbsp;&nbsp;&nbsp;The model will operate by taking an input - a series of CXR images - scanning them, and then outputting all of the 
+                        identified diseases. The model can prioritize fourteen different disease levels, and can determine which one is more of a concern, 
+                        flagging it. 
+                        </br></br> 
+                        Four different triage levels have been delineated:  
+                        </br></br> 
+                        <b>No Finding:</b> The CXR has no identifiable diagnoses. 
+                        </br></br> 
+                        <b>Chronic:</b> The identified diagnosis is not of immediate concern, but the patient should still seek treatment with a long-term 
+                        care provider.
+                        </br> 
+                        <i>&nbsp;&nbsp;&nbsp;&nbsp;Example: Cardiomegaly (AKA an enlarged heart)</i>
+                        </br></br> 
+                        <b>Acute:</b> The identified diagnosis is of immediate concern and requires within a twenty-four hour window, but is not life-threatening. 
+                        </br>
+                        <i>&nbsp;&nbsp;&nbsp;&nbsp;Example: Pneumonia</i>
+                        </br></br> 
+                        <b>Emergent:</b> The identified diagnosis is of immediate concern and requires treatment as soon as possible, as the condition is 
+                        life-threatening or requires surgical intervention. 
+                        </br>
+                        <i>&nbsp;&nbsp;&nbsp;&nbsp;Example: Pneumothorax (AKA a collapsed lung)</i>
                     </h3>
                 </div>
                 <div class = "col-3">

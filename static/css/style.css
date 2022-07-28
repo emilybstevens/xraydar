@@ -103,11 +103,24 @@ nav {
     padding-bottom: 1.04vw;
 }
 
+.fragment-two h4 {
+    text-align: justify;
+    font-size: medium;
+    padding-right: 6.25vw;
+    padding-left: 2.08vw;
+    padding-bottom: 1.04vw;
+}
+
+.fragment-two h5 {
+    text-align: justify;
+    font-size: large;
+}
+
 .fragment-two img {
     float: right;
-    padding-bottom: 0.52vw;
-    max-height: 21vw;
-    padding-left: 120px;
+    margin-top: 1.5vw;
+    max-height: 23.7vw;
+    /* padding-left: 120px;*/
 }
 
 .fragment-two a{
@@ -195,10 +208,10 @@ nav {
 }
 
 .fragment-three img {
-    float: right;
+    float: left;
     padding-bottom: 0.52vw;
     max-height: 21vw;
-    padding-left: 120px;
+    padding-right: 20px;
 }
 
 .fragment-three a{
@@ -295,6 +308,48 @@ nav {
     max-height: 21vw;
 }
 
+/* FRAG SIX */
+.fragment-six {
+    background-color: var(--light);
+}
+
+.fragment-six .row {
+    padding-top: 1.56vw;
+    padding-right: 3.65vw;
+}
+
+.fragment-six h1 {
+    background-color: var(--medium-dark);
+    color: var(--light);
+    text-align: center;
+    font-size: x-large;
+    padding-top: 1.04vw;
+    padding-bottom: 1.04vw;
+}
+
+.fragment-six h2 {
+    text-align: justify;
+    font-size: large;
+    padding-top: 1.04vw;
+    padding-right: 6.25vw;
+    padding-left: 6.25vw;
+    padding-bottom: 1.04vw;
+}
+
+.fragment-six h3 {
+    text-align: justify;
+    font-size: large;
+    padding-top: 1.04vw;
+    padding-right: 2.08vw;
+    padding-left: 6.25vw;
+    padding-bottom: 2.6vw;
+}
+
+.fragment-six img {
+    float: left;
+    padding-bottom: 0.52vw;
+    max-height: 21vw;
+}
 
 /* FRAG END */
 .fragment-end {

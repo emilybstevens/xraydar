@@ -82,7 +82,7 @@
                 <div class = "col-2">
                     <!-- selection drop down -->
                     <div class="well">
-                        <h4><b>Select X-Ray</b></h4>
+                        <h5><b>Select X-Ray</b></h5>
                         <!-- <select id="selDataset"></select> -->
                         <select id="selDataset" onchange="optionChanged(this.value)"></select>
                     </div>
@@ -95,7 +95,7 @@
                 <div class="col-2">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <h4 class="panel-title"><b>Demographic Info</b></h4>
+                            <h5 class="panel-title"><b>Demographic Info</b></h5>
                         </div>
                         <div id="sample-metadata" class="panel-body"></div>
                     </div>
@@ -106,7 +106,7 @@
                 <div class = "col-2">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <h4 class="panel-title"><b>All Diagnoses</b></h4>
+                            <h5 class="panel-title"><b>All Diagnoses</b></h5>
                         </div>
                         <div id="all-dx" class="panel-body"></div>
                     </div>
@@ -120,26 +120,34 @@
         <section class="fragment fragment-three" id="three">
             <h1>[insert interactive data]</h1>
             <div class="row">
-                <div class="col-2"></div>
-                <div class = "col-md-8"></div>
+                <div class="col-4"></div>
+                <div class = "col-4"></div>
                     <div class = "three">
-                        <h2>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Vestibulum mattis ullamcorper velit sed. Quis lectus nulla at volutpat diam ut venenatis. Feugiat pretium nibh ipsum consequat 
-                        nisl vel pretium. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. In hendrerit gravida rutrum quisque non 
-                        tellus orci ac.
+                        Access all diagnoses associated with a CXR, as well as the identified triage level and highest-level diagnosis. 
                         </br></br>
-                        Egestas sed sed risus pretium quam vulputate dignissim suspendisse in. Cursus euismod quis viverra nibh cras pulvinar mattis nunc. 
-                        Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet. Non pulvinar neque laoreet suspendisse interdum consectetur libero id. 
-                        Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Tristique magna sit amet purus gravida. Sem et tortor consequat 
-                        id porta nibh venenatis.
-                        </br></br>
-                        Elementum pulvinar etiam non quam lacus suspendisse faucibus. Arcu non sodales neque sodales. Lorem ipsum dolor sit amet consectetur. 
-                        Rhoncus urna neque viverra justo nec. Mauris augue neque gravida in fermentum et sollicitudin. Porta nibh venenatis cras sed felis eget velit.
-                        </h2>
+                        Four triage levels: 
+                        </br></br> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;The model will operate by taking an input - a series of CXR images - scanning them, and then outputting all of the 
+                        identified diseases. The model can prioritize fourteen different disease levels, and can determine which one is more of a concern, flagging it. 
+                        </br></br> 
+                        Four different triage levels have been delineated:  
+                        </br></br> 
+                        <b>No Finding:</b> The CXR has no identifiable diagnoses. Green zone. 
+                        </br></br> 
+                        <b>Chronic:</b> The identified diagnosis is not of immediate concern, but the patient should still seek treatment with a long-term care provider. Yellow zone. 
+                        </br> 
+                        <i>&nbsp;&nbsp;&nbsp;&nbsp;Example: Cardiomegaly (AKA an enlarged heart)</i>
+                        </br></br> 
+                        <b>Acute:</b> The identified diagnosis is of immediate concern and requires within a twenty-four-hour window, but is not life-threatening. Orange zone. 
+                        </br>
+                        <i>&nbsp;&nbsp;&nbsp;&nbsp;Example: Pneumonia</i>
+                        </br></br> 
+                        <b>Emergent:</b> The identified diagnosis is of immediate concern and requires treatment as soon as possible, as the condition is life-threatening or requires surgical intervention. Red zone. 
+                        </br>
+                        <i>&nbsp;&nbsp;&nbsp;&nbsp;Example: Pneumothorax (AKA a collapsed lung)</i>
                     </div>
                 </div>
-                <div class="col-2"></div>
+                <div class="col-4"></div>
             </div>
         </section>
 
