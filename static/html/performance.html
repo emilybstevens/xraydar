@@ -78,13 +78,21 @@
             <div class = "three">
                 <h1>Algorithm Performance</h1>
             </div>
+
             <div class="row">
                 <div class="col-2"></div>
-                <div class="col-5">
+                <div class="col-4" >
                     <h3>
                         The output from the machine is a series of lines denoting the image file name, followed by a series of categories. If the machine 
                         recognized a positive disease label in the respective category, it marked it with a "1". If no disease was spotted, the No Label category recevied a "1".</br></br>
                         For a better view of the image, <a href="https://files.slack.com/files-pri/T031E1FV95Z-F03PUBNQ9T4/image.png" target="_blank"><b>click here</b></a>. 
+                    </h3>
+                    <h3>
+                        The estimated distribution of various disease labels present in the original data set can be seen 
+                        <a href="https://files.slack.com/files-pri/T031E1FV95Z-F03PRD2VD53/image.png" target="_blank"><b>here</b></a>. 
+                    </h3>
+                    <h3>
+                        Params utilized in training can be seen <a href="https://user-images.githubusercontent.com/99558296/181454566-eee20557-0292-4f9f-a69d-112d0fbd33c2.png" target="_blank"><b>here</b></a>. 
                     </h3>
                 </div>
                 <div class="col-2">
@@ -93,36 +101,6 @@
                 <div class="col-3"></div>
             </div>
             
-            <div class="bar"></div>
-
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-3">
-                    <img src="../images/set_dist.png">
-                </div>
-                <div class = "col-5" >
-                    <h3>
-                    The estimated distribution of various disease labels present in the original data set can be seen 
-                    <a href="https://files.slack.com/files-pri/T031E1FV95Z-F03PRD2VD53/image.png" target="_blank"><b>here</b></a>. 
-                    </h3>
-                </div>
-                <div class="col-2"></div>
-            </div>
-
-            <div class="bar"></div>
-
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-5">
-                    <h3>
-                        Params utilized in training can be seen <a href="https://files.slack.com/files-pri/T031E1FV95Z-F03PRD2GNLV/image.png" target="_blank"><b>here</b></a>. 
-                    </h3>
-                </div>
-                <div class="col-2">
-                    <img src="../images/sequential.png">
-                </div>
-                <div class="col-3"></div>
-            </div>
         </div>
         </section>
 
@@ -132,16 +110,19 @@
         <div class="row">
             <div class="col-2"></div>
             <div class="col-3">
-                <img src="../images/initEpoc.png">
+                <img src="https://user-images.githubusercontent.com/99558296/181460915-67ccc170-1f8d-4a84-a4fb-31fb4df9751f.png">
             </div>
             <div class = "col-5" >
                 <h3>
-                Currently, in order to visualize the ability of the machine to classify the different diseases, a ROC curve (Receiver Characteristics Operator) has been created. 
-                This graph (seen on the left) shows the AUC (Area Under Curve) for each specific disease label. 
+                &nbsp;&nbsp;&nbsp;&nbsp;When a CXR image is scanned, it is scanned for multiple diseases at once. The resulting output focuses on only true positives, decreasing the risk of 
+                accidental misdiagnosis. A graph like the one seen on the left is created for each diagnosis possibility identified for a CXR, delineating the likelihood 
+                of the true positive being incorrect. </br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Ideally, the upper left quadrant will have the greatest value, indicating that it truly is a true positive. 
+                In this case, the image indicates that the patient likely has a positive pneumothorax (collapsed lung), and would be classified as an emergent patient requiring immediate 
+                surgery. 
                 </br></br>
-                AUC scores for each disease range from 0.26 to 0.88. The image on the left displays the AUC score by disease label, 
-                and how it increases with each epoch. For a better view of the image, 
-                <a href="https://files.slack.com/files-pri/T031E1FV95Z-F03P1GL8E2Y/alpha_net_10epochs.png" target="_blank"><b>click here</b></a>. 
+                &nbsp;&nbsp;&nbsp;&nbsp;For a better view of the image, 
+                <a href="https://user-images.githubusercontent.com/99558296/181460915-67ccc170-1f8d-4a84-a4fb-31fb4df9751f.png" target="_blank"><b>click here</b></a>. 
                 </h3>
             </div>
             <div class="col-2"></div>
