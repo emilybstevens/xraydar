@@ -45,10 +45,6 @@
                     <a class="nav-link" href="performance.html">PERFORMANCE</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="app.html">APP</a>
-                </li>
-
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       DATA
@@ -95,10 +91,11 @@
                         Params utilized in training can be seen <a href="https://user-images.githubusercontent.com/99558296/181454566-eee20557-0292-4f9f-a69d-112d0fbd33c2.png" target="_blank"><b>here</b></a>. 
                     </h3>
                 </div>
+                <div class="col-1"></div>
                 <div class="col-2">
-                    <img src="../images/output.png">
+                    <img src="../images/Delta_model_AUCROC.png">
                 </div>
-                <div class="col-3"></div>
+                <div class="col-2"></div>
             </div>
             
         </div>
@@ -109,12 +106,12 @@
             <h1>Images of Performance</h1>
         <div class="row">
             <div class="col-2"></div>
-            <div class="col-3">
+            <div class="col-4">
                 <img src="https://user-images.githubusercontent.com/99558296/181460915-67ccc170-1f8d-4a84-a4fb-31fb4df9751f.png">
             </div>
-            <div class = "col-5" >
+            <div class = "col-4" >
                 <h3>
-                &nbsp;&nbsp;&nbsp;&nbsp;When a CXR image is scanned, it is scanned for multiple diseases at once. The resulting output focuses on only true positives, decreasing the risk of 
+                &nbsp;&nbsp;&nbsp;&nbsp;When a CXR image is scanned, it is scanned for multiple diseases at once. The resulting output (confusion matrices) focuses on only true positives, decreasing the risk of 
                 accidental misdiagnosis. A graph like the one seen on the left is created for each diagnosis possibility identified for a CXR, delineating the likelihood 
                 of the true positive being incorrect. </br></br>
                 &nbsp;&nbsp;&nbsp;&nbsp;Ideally, the upper left quadrant will have the greatest value, indicating that it truly is a true positive. 
@@ -123,6 +120,51 @@
                 </br></br>
                 &nbsp;&nbsp;&nbsp;&nbsp;For a better view of the image, 
                 <a href="https://user-images.githubusercontent.com/99558296/181460915-67ccc170-1f8d-4a84-a4fb-31fb4df9751f.png" target="_blank"><b>click here</b></a>. 
+                </h3>
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+        <div class = "2ndary title">
+            <h1>
+                Further Confusion Matrix Examples
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-3">
+                <img src="../images/delta_cm_Atelectasis.png">
+            </div>
+            <div class="col-3">
+                <img src="../images/delta_cm_Effusion.png">
+            </div>
+            <div class="col-3">
+                <img src="../images/delta_cm_Infiltration.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class = "col-4"></div>
+            <div class = "col-6">
+                <h3>To view more confusion matrices for other diagnoses, 
+                    <a href="https://github.com/emilybstevens/CXR-ML/tree/main/Resources/deltanet" target="_blank"><b>click here</b></a>.
+                </h3>
+            </div>
+            <div class = "col-3"></div>
+        </div>
+        </section>
+
+        <!-- FRAGMENT 3 (intro)-->
+        <section class="fragment fragment-four" id="four">
+            <h1>Future App Potential</h1>
+        <div class="row">
+            <div class="col-3"></div>
+
+            <div class = "col-6" >
+                <h3>
+                &nbsp;&nbsp;&nbsp;&nbsp;Future work will be required to build a functioning program that utilizes the machine algorithm. 
+                Ideally, a future application would allow for batch image uploading, giving healthcare workers the ability to triage multiple images at once. 
+                This would allow for healthcare workers to handle larger patient loads at once, while prioritizing the higher-risk cases prior to receiving the 
+                official radiology report. 
                 </h3>
             </div>
             <div class="col-2"></div>
